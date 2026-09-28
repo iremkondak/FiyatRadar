@@ -1,0 +1,1 @@
+export { searchMediaMarkt } from "./search";

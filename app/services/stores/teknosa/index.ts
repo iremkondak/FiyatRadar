@@ -1,0 +1,1 @@
+export { searchTeknosa } from "./search";
