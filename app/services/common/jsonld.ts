@@ -172,7 +172,7 @@ export async function readJsonLdProduct(
     const jsonLdTexts = await page
       .locator('script[type="application/ld+json"]')
       .allTextContents();
-
+let productNode: Record<string, unknown> | null=null;
   for (const jsonText of jsonLdTexts) {
     try {
       const parsed: unknown = JSON.parse(jsonText);
